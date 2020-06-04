@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { H1, H2 } from '../ui/Headings'
 
 const Home = () => {
     return (
         <>
-            <h1>On the homepage</h1>
+            <H2>Madeline O'Moore</H2>
+            <H1><em>Los Angeles</em> &mdash; Software Engineer & Instructor</H1>
         </>
     )
 }

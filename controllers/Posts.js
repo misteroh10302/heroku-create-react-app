@@ -3,6 +3,7 @@ const router = express.Router();
 const Posts = require('../models/Post.js');
 
 router.get('/', (req, res) => {
+
     Posts.find({}, (err, foundPosts) => {
         res.json(foundPosts);
     })
@@ -15,6 +16,7 @@ router.delete('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+
     Posts.create(req.body, (err, createdPost) => {
         res.json(createdPost);
     });
